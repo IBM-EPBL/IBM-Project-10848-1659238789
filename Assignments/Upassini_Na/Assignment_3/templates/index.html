@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        img {
+            height : 200px;
+            width : 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Object - Bucket - Images</h1>
+    <br><br><br><br>
+    <img src="https://nutassist.s3.jp-tok.cloud-object-storage.appdomain.cloud/1.jpg" alt=""><br><br>
+    <img src="https://nutassist.s3.jp-tok.cloud-object-storage.appdomain.cloud/2.jpg" alt=""><br><br>
+    <img src="https://nutassist.s3.jp-tok.cloud-object-storage.appdomain.cloud/3.jpg" alt=""><br><br>
+    <img src="https://nutassist.s3.jp-tok.cloud-object-storage.appdomain.cloud/4.jpg" alt=""><br><br>
+    <img src="https://nutassist.s3.jp-tok.cloud-object-storage.appdomain.cloud/5.jpg" alt=""><br><br>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "8bbc8196-4eaf-4b78-8e92-1cfbdca27040", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "9dfc371d-0dc6-41b0-bc45-16d1565725c5", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
+
