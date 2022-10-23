@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "8de4f2ff-3ea3-4d88-abcd-6e0f2a9a837d", // The ID of this integration.
+              region: "au-syd", // The region your integration is hosted in.
+              serviceInstanceID: "890e4bfb-8106-44f4-a82c-101ede69ae91", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+          <style>
+            img{
+              width: 150;
+              height: 150;
+            }
+          </style>
+    </head>
+    <body>
+        <img src="https://ibmassignment-3.s3.jp-tok.cloud-object-storage.appdomain.cloud/pic1.jpg" alt="loading">
+        <img src="https://ibmassignment-3.s3.jp-tok.cloud-object-storage.appdomain.cloud/pic2.jpg" alt="loading">
+        <img src="https://ibmassignment-3.s3.jp-tok.cloud-object-storage.appdomain.cloud/pic3.jpg" alt="loading">
+        <img src="https://ibmassignment-3.s3.jp-tok.cloud-object-storage.appdomain.cloud/pic4.jpg" alt="loading">
+        <img src="https://ibmassignment-3.s3.jp-tok.cloud-object-storage.appdomain.cloud/pic5.jpg" alt="loading">
+    </body>
+</html>
