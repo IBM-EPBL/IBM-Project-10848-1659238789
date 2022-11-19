@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">user details</div>
+      <div class="content">
+        <form action="/foodDetail" method="POST" class="login  email">
+          <table>
+           <div class="user-details">
+              <tr>
+                <div class="input-box">
+                 <td>Full Name</td>
+                 <td><input type="text" placeholder="Enter your name" name="fullname"></td>
+              </div>
+           </tr>
+           <tr>
+              <div class="input-box">
+                <td>Height</td>
+                <td><input type="text" placeholder="Enter your height" name="height"></td>
+              </div>
+           </tr>
+
+           <tr>
+              <div class="input-box">
+                <td>Weight</td>
+                <td><input type="text" placeholder="Enter your weight" name="weight"></td>
+              </div>
+           </tr>
+           <tr>
+              <div class="input-box">
+                <td>Blood Pressure</td> 
+                 <td><input type="text" placeholder="Enter your BP mmHg value" name="bp"></td>
+              </div>
+           </tr>
+           <tr>
+              <div class="input-box">
+                <td> <span class="details">Diabetics</span></td>
+                 <td><input type="text" placeholder="Enter your diabetics mg/dl value" name=" diabetics"></td>
+              </div>
+           </tr>
+           <tr>
+              <div class="input-box">
+                <td> <span class="details">Age</span></td>
+                <td><input type="text" placeholder="Enter your age" name="age"></td>
+              </div>
+           </tr>
+           <tr>
+            <div class="input-box">
+              <td> <span class="details">Food Image</span></td>
+              <td><input type="file" placeholder="Upload your file" name="file"></td>
+            </div>
+         </tr>
+           </div>
+           </table>
+           <div class="button">
+             <div class="col">
+              <a href="foodDetail.html"><button>Submit</button></a>
+             </div>
+           </div>
+        </form>
+  </body>
+</html>
